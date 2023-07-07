@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $destinataire = 'votreadresse@example.com';
 
             // En-têtes de l'e-mail
+            // $headers = 'Content-Type: text/plain; charset=utf-8' . "\r\n";
             $headers = 'From: ' . $email . "\r\n" .
                 'Reply-To: ' . $email . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
