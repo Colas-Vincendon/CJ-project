@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $contenu .= "Message: " . htmlspecialchars($message, ENT_QUOTES, 'UTF-8') . "\n";
 
             // Adresse e-mail de destination
-            $destinataire = 'votreadresse@example.com';
+            $destinataire = 'colasvincendon@gmail.com';
 
             // En-têtes de l'e-mail
             // $headers = 'Content-Type: text/plain; charset=utf-8' . "\r\n";
