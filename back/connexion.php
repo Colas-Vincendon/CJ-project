@@ -23,57 +23,52 @@ session_start();
     <!-- --------------------------- BODY ------------------------- -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-12 col-lg-12 col-xl-10 col-xxl-8">
-                <!-- ------------------------ TOP-HEADER ----------------------- -->
-                
+            <div class="col col-12">
+
                 <!-- ------------------------------ HEADER ------------------------------- -->
-
-                <!-- --------------------------------- START NAVBAR ------------------------------ -->
-                
-                <!-- ------------------------------ DEBUT MAIN ------------------------------- -->
-
                 <?php
-    // Récupérer les valeurs des champs
-    $email = $_POST['email'];
-    $password = $_POST['password'];
 
-    require_once 'databaseConnexion.php';
-    //SINGLETON
-    $database = Database::getInstance();
-    $conn = $database->getConnection();
+                require_once '../front/components/header.html';
 
-    $errorMessage = ''; // Initialiser le message d'erreur à une chaîne vide
-    
-    if (isset($_POST['connect'])) { // Vérifier si le bouton 'Se connecter' a été soumis
-        // Requête pour récupérer le hash du mot de passe enregistré
-        $stmt = $conn->prepare("SELECT password, isAdmin FROM nuriEmployes WHERE email = :email");
-        $stmt->bindParam(':email', $email);
-        $stmt->execute();
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                // Récupérer les valeurs des champs
+                $email = $_POST['email'];
+                $password = $_POST['password'];
 
-        if ($row && password_verify($password, $row['password'])) {
-            // Mot de passe correct, définir les informations de session
-            $_SESSION['email'] = $email;
-            $_SESSION['isAdmin'] = $row['isAdmin'];
+                require_once 'databaseConnexion.php';
+                //SINGLETON
+                $database = Database::getInstance();
+                $conn = $database->getConnection();
 
-            // Définition de la page de redirection
+                $errorMessage = ''; // Initialiser le message d'erreur à une chaîne vide
+                
+                if (isset($_POST['connect'])) { // Vérifier si le bouton 'Se connecter' a été soumis
+                    // Requête pour récupérer le hash du mot de passe enregistré
+                    $stmt = $conn->prepare("SELECT password, isAdmin FROM nuriEmployes WHERE email = :email");
+                    $stmt->bindParam(':email', $email);
+                    $stmt->execute();
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+                    if ($row && password_verify($password, $row['password'])) {
+                        // Mot de passe correct, définir les informations de session
+                        $_SESSION['email'] = $email;
+                        $_SESSION['isAdmin'] = $row['isAdmin'];
+
+                        // Définition de la page de redirection
                         $redirectPage = 'accueilAdmin.php';
 
                         // Redirection vers la page appropriée
                         echo '<script>window.location.href = "' . $redirectPage . '";</script>';
-            exit();
-        } else {
-            $errorMessage = 'Adresse e-mail ou mot de passe incorrect.';
-        }
-    }
+                        exit();
+                    } else {
+                        $errorMessage = 'Adresse e-mail ou mot de passe incorrect.';
+                    }
+                }
 
-    $conn = null;
+                $conn = null;
 
-    ?>
-
-
-                <div class="container text-center connect mb-3">
-                    <p class="text-red-bold my-4">Identification</p>
+                ?>
+                <div class="container-fluid text-center my-3 py-3">
+                    <p class="fs-2 my-4">Identification</p>
                     <form method="POST">
                         <div class="row justify-content-center my-4">
                             <div class="col-12 col-md-6 col-lg-4">
@@ -89,7 +84,7 @@ session_start();
                         </div>
                         <div class="row justify-content-center my-4">
                             <div class="col-12 col-md-6 col-lg-4">
-                                <button class="btn btn-danger" name="connect" type="submit" style="width: 130px;">Se
+                                <button class="btn btn-primary" name="connect" type="submit" style="width: 130px;">Se
                                     connecter</button>
                             </div>
                         </div>
@@ -102,8 +97,8 @@ session_start();
                 </div>
 
                 <!-- --------------------------------- FOOTER --------------------------- -->
-                
-                
+
+
             </div>
 
 

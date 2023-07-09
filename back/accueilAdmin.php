@@ -83,7 +83,7 @@ if (isset($_POST['logout'])) {
 
                 <img src="../Medias/logoRHON'EAU.jpg" alt="logo rhon'eau">
             </div>
-            <div style="background-color:RGBA(0,150,151,0.36); border:solid 1px darkgrey" class="container d-flex align-items-center justify-content-center mb-3">
+            <div style="background-color:RGBA(0,150,151,0.36); border:solid 1px darkgrey" class="container d-flex flex-column align-items-center text-center justify-content-center mb-3">
                 <h1 class="my-3 mx-3"><b></b>Espace Administrateur</b></h1><br>
                 <br>
                 <form method="post">
@@ -101,7 +101,7 @@ if (isset($_POST['logout'])) {
                     
                     <div class='my-3'>
                         <label class="my-2" for='images'>Images :</label><br>
-                        <input class="btn btn-primary" type='file' id='images' name='images[]' multiple required>
+                        <input style="width: 290px;" class="btn btn-primary" type='file' id='images' name='images[]' multiple required>
                     </div>
                     <button class="btn btn-success my-5" type='submit'>Ajouter</button>
                 </form>

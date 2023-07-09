@@ -2,6 +2,6 @@
 
 <?php
 
-require 'header.html';
+require './components/header.html';
 
 ?>
