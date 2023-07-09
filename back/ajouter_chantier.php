@@ -9,47 +9,50 @@ $conn = $database->getConnection();
 $titre = $_POST['titre'];
 $paragraphe = $_POST['paragraphe'];
 
-// Vérifier si un fichier a été téléchargé
-if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-    $fileTmpPath = $_FILES['image']['tmp_name'];
-    $fileName = $_FILES['image']['name'];
-    $fileType = $_FILES['image']['type'];
-    $fileSize = $_FILES['image']['size'];
+// Insérer le nouveau chantier dans la table "nurichantiers" en utilisant une requête préparée
+$stmt = $conn->prepare("INSERT INTO `nurichantiers` (`titre`, `paragraphe`) VALUES (:titre, :paragraphe)");
+$stmt->bindParam(':titre', $titre);
+$stmt->bindParam(':paragraphe', $paragraphe);
+$stmt->execute();
 
-    // Vérifier si le fichier est une image
-    $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
-    if (in_array($fileType, $allowedTypes)) {
-        // Lire le contenu du fichier
-        $imageData = file_get_contents($fileTmpPath);
+// Récupérer l'identifiant du dernier chantier inséré
+$chantierID = $conn->lastInsertId();
 
-        // Convertir l'image en format Base64
-        $imageBase64 = base64_encode($imageData);
+// Vérifier si des fichiers ont été téléchargés
+if (isset($_FILES['images']) && !empty($_FILES['images']['name'][0])) {
+    $totalImages = count($_FILES['images']['name']);
 
-        // Insérer le nouveau service dans la table "services" en utilisant une requête préparée
-        $stmt = $conn->prepare("INSERT INTO nuri-chantiers (titre, paragraphe) VALUES (:titre, :paragraphe)");
-        $stmt->bindParam(':titre', $titre);
-        $stmt->bindParam(':paragraphe', $paragraphe);
-        $stmt->execute();
+    // Parcourir chaque fichier téléchargé
+    for ($i = 0; $i < $totalImages; $i++) {
+        $fileTmpPath = $_FILES['images']['tmp_name'][$i];
+        $fileName = $_FILES['images']['name'][$i];
+        $fileType = $_FILES['images']['type'][$i];
+        $fileSize = $_FILES['images']['size'][$i];
 
-        // Récupérer l'identifiant du dernier service inséré
-        $chantierID = $conn->lastInsertId();
+        // Vérifier si le fichier est une image
+        $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
+        if (in_array($fileType, $allowedTypes)) {
+            // Lire le contenu du fichier
+            $imageData = file_get_contents($fileTmpPath);
 
-        // Insérer l'image dans la table "imageService" en utilisant une requête préparée
-        $stmt = $conn->prepare("INSERT INTO nuri-chantiersimages (chantier-ID, image_base64) VALUES (:chantier-ID, :imageBase64)");
-        $stmt->bindParam(':chantier-ID', $chantierID);
-        $stmt->bindParam(':imageBase64', $imageBase64);
-        $stmt->execute();
+            // Convertir l'image en format Base64
+            $imageBase64 = base64_encode($imageData);
 
-        echo "La présentation a été ajoutée avec succès.";
-    } else {
-        echo "Le fichier doit être une image de type JPEG, PNG ou GIF.";
+            // Insérer l'image dans la table "nurichantiersimages" en utilisant une requête préparée
+            $stmt = $conn->prepare("INSERT INTO `nurichantiersimages` (`chantiersID`, `image_base64`) VALUES (:chantierID, :imageBase64)");
+            $stmt->bindParam(':chantierID', $chantierID);
+            $stmt->bindParam(':imageBase64', $imageBase64);
+            $stmt->execute();
+        } else {
+            echo "Le fichier doit être une image de type JPEG, PNG ou GIF.";
+        }
     }
+
+    echo "La présentation a été ajoutée avec succès.";
 } else {
-    echo "Une erreur s'est produite lors du téléchargement du fichier.";
+    echo "Aucun fichier n'a été téléchargé.";
 }
 
 $conn = null;
 
-header("Location: ../front/nouveauChantierAjouté.html");
 exit();
-?>
