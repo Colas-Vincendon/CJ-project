@@ -20,12 +20,12 @@ if(isset($_POST['chantier_id'])) {
     $stmt->bindParam(':chantierId', $chantierId);
     $stmt->execute();
 
-    echo "Votre réalisation a été supprimé avec succès.";
+    // Redirection vers la page accueilAdmin.php
+    header("Location: accueilAdmin.php");
     // Fermer la connexion à la base de données
     $conn = null;
 } else {
     echo "L'identifiant du chantier n'a pas été spécifié.";
 }
-header('location accueilAdmin.php')
 
 ?>
