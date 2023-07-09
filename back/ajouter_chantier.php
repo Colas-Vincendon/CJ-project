@@ -7,12 +7,10 @@ $conn = $database->getConnection();
 
 // Récupérer les valeurs du formulaire
 $titre = $_POST['titre'];
-$paragraphe = $_POST['paragraphe'];
 
 // Insérer le nouveau chantier dans la table "nurichantiers" en utilisant une requête préparée
-$stmt = $conn->prepare("INSERT INTO `nurichantiers` (`titre`, `paragraphe`) VALUES (:titre, :paragraphe)");
+$stmt = $conn->prepare("INSERT INTO `nurichantiers` (`titre`) VALUES (:titre)");
 $stmt->bindParam(':titre', $titre);
-$stmt->bindParam(':paragraphe', $paragraphe);
 $stmt->execute();
 
 // Récupérer l'identifiant du dernier chantier inséré
@@ -48,7 +46,8 @@ if (isset($_FILES['images']) && !empty($_FILES['images']['name'][0])) {
         }
     }
 
-    echo "La présentation a été ajoutée avec succès.";
+    // Redirection vers la page accueilAdmin.php
+    header("Location: accueilAdmin.php");
 } else {
     echo "Aucun fichier n'a été téléchargé.";
 }

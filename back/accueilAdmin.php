@@ -77,11 +77,7 @@ if (isset($_POST['logout'])) {
                         <label class="my-2" for='titre'>Titre :</label><br>
                         <input type='text' id='titre' name='titre' required>
                     </div>
-                    <div class='my-3'>
-                        <label class="my-2" for='paragraphe'>Paragraphe :</label><br>
-                        <textarea style="width: 50vw; height: 20vh; resize: none" id='paragraphe' name='paragraphe'
-                            required></textarea>
-                    </div>
+                    
                     <div class='my-3'>
                         <label class="my-2" for='images'>Images :</label><br>
                         <input class="btn btn-primary" type='file' id='images' name='images[]' multiple required>
@@ -104,7 +100,7 @@ if (isset($_POST['logout'])) {
                     $conn = $database->getConnection();
 
                     // Récupérer les chantiers depuis la base de données
-                    $sql = "SELECT c.id, c.titre, c.paragraphe
+                    $sql = "SELECT c.id, c.titre
         FROM nurichantiers c";
                     $stmt = $conn->prepare($sql);
                     $stmt->execute();
@@ -114,7 +110,6 @@ if (isset($_POST['logout'])) {
                         foreach ($chantiers as $chantier) {
                             $chantierId = $chantier['id'];
                             $titre = $chantier['titre'];
-                            $paragraphe = $chantier['paragraphe'];
 
                             // Récupérer les images du chantier depuis la base de données
                             // Requête préparée pour récupérer les images du chantier
@@ -126,7 +121,6 @@ if (isset($_POST['logout'])) {
                             echo "<div class='col-12 col-lg-5 mx-2 my-2 py-3 border border-secondary' style='background-color:lightblue'>";
                             echo "<div>";
                             echo "<h3>$titre</h3>";
-                            echo "<p>$paragraphe</p>";
 
                             if (count($images) === 1) {
                                 // Afficher une seule image
