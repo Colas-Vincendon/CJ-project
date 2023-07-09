@@ -49,6 +49,24 @@ if (isset($_POST['logout'])) {
 </head>
 
 <body>
+<style>
+    body {
+        position: relative;
+    }
+
+    body::before {
+        content: "";
+        background-image: url('../Medias/pic_visitCards.jpg');
+        opacity: 0.10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+</style>
+
     <!-- --------------------------- BODY ------------------------- -->
     <div>
         <div>
@@ -61,8 +79,11 @@ if (isset($_POST['logout'])) {
             <!-- ------------------------------ END NAVBAR ------------------------------- -->
 
             <!-- ------------------------------ DEBUT MAIN ------------------------------- -->
-            <div class="container d-flex align-items-center justify-content-center my-2">
+            <div class="container-fluid text-center py-2 my-2 mb-3" style="background-color:white; border:solid 1px darkgrey">
 
+                <img src="../Medias/logoRHON'EAU.jpg" alt="logo rhon'eau">
+            </div>
+            <div style="background-color:RGBA(0,150,151,0.36); border:solid 1px darkgrey" class="container d-flex align-items-center justify-content-center mb-3">
                 <h1 class="my-3 mx-3"><b></b>Espace Administrateur</b></h1><br>
                 <br>
                 <form method="post">
@@ -70,7 +91,7 @@ if (isset($_POST['logout'])) {
                 </form>
             </div>
 
-            <div class="container text-center connect my-2">
+            <div style="background-color:RGBA(0,150,151,0.36); border:solid 1px darkgrey" class="container text-center my-5">
                 <h1 class='ml-0 text-grey my-3'>Ajouter un nouveau chantier dans "Nos réalisations"</h1>
                 <form action='ajouter_chantier.php' method='POST' enctype='multipart/form-data'>
                     <div>
@@ -89,9 +110,9 @@ if (isset($_POST['logout'])) {
 
 
 
-            <div class="container text-center connect my-2">
+            <div class="container text-center my-2">
                 <h1 class="ml-0 text-grey my-3">Supprimer un chantier de la page "Nos réalisations"</h1>
-                <div class="row">
+                <div class="row justify-content-center">
                     <?php
                     require_once 'databaseConnexion.php';
 
@@ -118,7 +139,7 @@ if (isset($_POST['logout'])) {
                             $stmtImages->execute();
                             $images = $stmtImages->fetchAll(PDO::FETCH_ASSOC);
 
-                            echo "<div class='col-12 col-lg-5 mx-2 my-2 py-3 border border-secondary' style='background-color:lightblue'>";
+                            echo "<div class='col-12 col-lg-5 mx-2 my-2 py-3 d-flex justify-content-center border border-secondary' style='background-color:RGBA(0,150,151,0.36)'>";
                             echo "<div>";
                             echo "<h3>$titre</h3>";
 
