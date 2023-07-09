@@ -21,7 +21,7 @@
             $paragraphe = $chantier['paragraphe'];
 
             // Afficher les informations du chantier
-            echo "<div class='col-12 col-lg-6 my-3 mx-3 py-3' style='background-color:blue>";
+            echo "<div class='col-12 col-lg-5 my-2 mx-2 py-3' style='background-color:lightblue>";
             echo "<div>";
             echo "<h3>$titre</h3>";
             echo "<p>$paragraphe</p>";

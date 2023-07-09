@@ -116,12 +116,6 @@ if (isset($_POST['logout'])) {
                             $titre = $chantier['titre'];
                             $paragraphe = $chantier['paragraphe'];
 
-                            // Afficher les informations du chantier
-                            echo "<div class='col-12 col-lg-5 mx-2 my-2 py-3 border border-secondary' style='background-color:lightblue'>";
-                            echo "<div>";
-                            echo "<h3>$titre</h3>";
-                            echo "<p>$paragraphe</p>";
-
                             // Récupérer les images du chantier depuis la base de données
                             // Requête préparée pour récupérer les images du chantier
                             $stmtImages = $conn->prepare("SELECT image_base64 FROM nurichantiersimages WHERE chantiersID = :chantierId");
@@ -129,7 +123,16 @@ if (isset($_POST['logout'])) {
                             $stmtImages->execute();
                             $images = $stmtImages->fetchAll(PDO::FETCH_ASSOC);
 
-                            if (!empty($images)) {
+                            echo "<div class='col-12 col-lg-5 mx-2 my-2 py-3 border border-secondary' style='background-color:lightblue'>";
+                            echo "<div>";
+                            echo "<h3>$titre</h3>";
+                            echo "<p>$paragraphe</p>";
+
+                            if (count($images) === 1) {
+                                // Afficher une seule image
+                                echo "<img src='data:image/jpeg;base64," . $images[0]['image_base64'] . "' class='d-block w-100' alt='Image chantier'>";
+                            } else if (count($images) > 1) {
+                                // Afficher un carousel
                                 echo "<div id='carouselExampleIndicators_$chantierId' class='carousel slide' data-bs-ride='carousel'>";
                                 echo "<ol class='carousel-indicators'>";
                                 foreach ($images as $index => $image) {
@@ -157,13 +160,14 @@ if (isset($_POST['logout'])) {
                                 echo "</a>";
 
                                 echo "</div>";
-                                echo "<div class='my-3'>";
-                                echo "<form action='supprimer_service.php' method='POST'>";
-                                echo "<input type='hidden' name='service_id' value='$chantierId'>";
-                                echo "<button class='btn btn-danger my-1' type='submit' onclick='return confirmDelete()'>Supprimer</button>";
-                                echo "</form>";
-                                echo "</div>";
                             }
+
+                            echo "<div class='my-3'>";
+                            echo "<form action='supprimer_chantier.php' method='POST'>";
+                            echo "<input type='hidden' name='chantier_id' value='$chantierId'>";
+                            echo "<button class='btn btn-danger my-1' type='submit' onclick='return confirmDelete()'>Supprimer</button>";
+                            echo "</form>";
+                            echo "</div>";
 
                             echo "</div>";
                             echo "</div>";
