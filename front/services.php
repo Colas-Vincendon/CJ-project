@@ -1,4 +1,3 @@
-//ecrire doctype
 
 <?php
 

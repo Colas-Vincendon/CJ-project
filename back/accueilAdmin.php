@@ -1,11 +1,6 @@
 <?php
-session_start();
 
-// Vérifier si l'utilisateur est connecté et s'il est administrateur, sinon le rediriger vers la page de connexion
-if (!isset($_SESSION['email']) || $_SESSION['isAdmin'] != 1) {
-    header('Location: connexion.php');
-    exit();
-}
+session_start();
 
 // if (!isset($_COOKIE['connexion_time'])) {
 //     // Le cookie n'existe pas, procédez à l'authentification
@@ -23,6 +18,14 @@ if (!isset($_SESSION['email']) || $_SESSION['isAdmin'] != 1) {
 // }
 
 // setcookie('connexion_time', time(), time() + 30);
+
+
+// Vérifier si l'utilisateur est connecté et s'il est administrateur, sinon le rediriger vers la page de connexion
+if (!isset($_SESSION['email']) || $_SESSION['isAdmin'] != 1) {
+    header('Location: connexion.php');
+    exit();
+}
+
 
 if (isset($_POST['logout'])) {
     // Déconnexion : Supprimer les informations de session et le cookie
@@ -83,11 +86,11 @@ if (isset($_POST['logout'])) {
 
                 <img src="../Medias/logoRHON'EAU.jpg" alt="logo rhon'eau">
             </div>
-            <div style="background-color:RGBA(0,150,151,0.36); border:solid 1px darkgrey" class="container d-flex flex-column align-items-center text-center justify-content-center mb-3">
-                <h1 class="my-3 mx-3"><b></b>Espace Administrateur</b></h1><br>
+            <div style="background-color:RGBA(0,150,151,0.36); border:solid 1px darkgrey" class="container d-flex flex-column align-items-center text-center justify-content-center mb-3 py-5">
+                <h1 class="mt-3 mx-3"><b></b>Espace Administrateur</b></h1><br>
                 <br>
                 <form method="post">
-                    <button class="btn btn-danger my-3 mx-3" type="submit" name="logout">Se déconnecter</button>
+                    <button class="btn btn-danger mb-3 mx-3" type="submit" name="logout">Se déconnecter</button>
                 </form>
             </div>
 

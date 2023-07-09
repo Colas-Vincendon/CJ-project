@@ -2,6 +2,18 @@
 
 session_start();
 
+// $currentTime = time();
+//     $cookieTime = $_COOKIE['connexion_time'];
+//     $expirationTime = $cookieTime + 30; // 30 secondes d'expiration
+
+//     if ($currentTime >= $expirationTime) {
+//         // Le cookie est expiré, procédez à l'authentification
+//         header('Location: connexion.php');
+//         exit;
+//     }
+
+// setcookie('connexion_time', time(), time() + 30);
+
 ?>
 
 <!DOCTYPE html>
@@ -27,8 +39,6 @@ session_start();
 
                 <!-- ------------------------------ HEADER ------------------------------- -->
                 <?php
-
-                require_once '../front/components/header.html';
 
                 // Récupérer les valeurs des champs
                 $email = $_POST['email'];
