@@ -1,0 +1,76 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.footerNav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.footerPictures {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+.socialNetwork {
+  display: flex;
+  margin-top: 0.8em;
+  justify-content: space-around;
+}
+.logoSocial {
+  width: 6em;
+  height: 4em;
+}
+.insta {
+  background-image: url(../../Medias/socialNetwork/insta.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tikTok {
+  background-image: url(../../Medias/socialNetwork/tiktok.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.facebook {
+  background-image: url(../../Medias/socialNetwork/facebook-logo-0.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h3 {
+  color: #119da4;
+}
+.footerList {
+  padding: 0;
+  list-style-type: none;
+  color: 119da4;
+}
+.footerList a {
+  text-decoration: none;
+  color: 119da4;
+}
+.footerContact {
+  border-right: 2px solid #119da4;
+  border-left: 2px solid #119da4;
+  padding: 0 5em;
+}
+.footerServices {
+  border-right: 2px solid #119da4;
+  padding: 0 4em;
+}
+/* #729bd7 */
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #119da4;
+  padding: 1em 0;
+  width: 100%;
+}
