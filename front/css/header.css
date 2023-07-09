@@ -1,0 +1,58 @@
+/* PARTIE TOP HEADER */
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7em;
+  background-color: #119da4;
+  height: 2.6em;
+  align-items: center;
+}
+.info {
+  background-color: #729bd7;
+  width: 23em;
+  height: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1em 0.5em;
+}
+.topHeader i {
+  color: white;
+  font-size: small;
+}
+.topHeader a {
+  color: white;
+  text-decoration: none;
+}
+.socialLink {
+  background-color: #729bd7;
+  width: 5em;
+  height: 2em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1em 0.5em;
+}
+/* PARTIE NAVIGATION */
+.headerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+.navigationHeader {
+  width: 48em;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.actives {
+  color: #0d6efd;
+  border-bottom: 2px solid #0d6efd;
+}
+svg {
+  color: red;
+}
