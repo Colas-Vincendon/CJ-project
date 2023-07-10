@@ -7,8 +7,6 @@
     href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
     rel="stylesheet"
   />
-  <link href="./css/galleryServices.css" rel="stylesheet" />
-  <link href="./css/footer.css" rel="stylesheet" />
 
 <?php
 echo "<div class='container_fluid d-flex flex-column'>";
