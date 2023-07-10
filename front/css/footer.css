@@ -60,13 +60,10 @@ h3 {
 .footerContact {
   border-right: 2px solid #119da4;
   border-left: 2px solid #119da4;
-  padding: 0 5em;
 }
-.footerServices {
-  border-right: 2px solid #119da4;
-  padding: 0 4em;
+.footerPages {
+  border-left: 2px solid #119da4;
 }
-/* #729bd7 */
 .copyright {
   display: flex;
   justify-content: center;
