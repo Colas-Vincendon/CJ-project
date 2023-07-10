@@ -1,4 +1,10 @@
 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A compléter</title>
+  <link href="../front/css/header.css" rel="stylesheet" />
+  <link href="../front/css/footer.css" rel="stylesheet" />
+  <link href="../front/css/galleryServices.css" rel="stylesheet" />
 <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -7,11 +13,9 @@
     href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
     rel="stylesheet"
   />
-<link href="../front/css/header.css" rel="stylesheet" />
-<link href="../front/css/footer.css" rel="stylesheet" />
-<link href="../front/css/galleryServices.css" rel="stylesheet" />
-
-<?php
+<body>
+    
+    <?php
 echo "<div class='container_fluid d-flex flex-column'>";
     echo "<div class='container_fluid'>";
     echo "<div style='display:block'>";
@@ -25,8 +29,9 @@ echo "<div class='container_fluid d-flex flex-column'>";
     require './components/footer.html';
     echo "</div>";
     echo "</div>";
-echo "</div>";
-?>
+    echo "</div>";
+    ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../front/script/header.js"></script>
-<script src="../front/script/cardsServices.js"></script>
+  <script src="../front/script/header.js"></script>
+  <script src="../front/script/cardsServices.js"></script>
+</body>
