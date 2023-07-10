@@ -28,8 +28,6 @@ session_start();
                 <!-- ------------------------------ HEADER ------------------------------- -->
                 <?php
 
-                require_once '../front/components/header.html';
-
                 // Récupérer les valeurs des champs
                 $email = $_POST['email'];
                 $password = $_POST['password'];
@@ -67,6 +65,12 @@ session_start();
                 $conn = null;
 
                 ?>
+
+                <div class="container-fluid text-center py-2 my-2 mb-3"
+                    style="background-color:white">
+
+                    <img class="img-fluid" src="../Medias/logoRHON'EAU.jpg" alt="logo rhon'eau">
+                </div>
                 <div class="container-fluid text-center my-3 py-3">
                     <p class="fs-2 my-4">Identification</p>
                     <form method="POST">

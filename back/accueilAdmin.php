@@ -79,15 +79,15 @@ if (isset($_POST['logout'])) {
             <!-- ------------------------------ END NAVBAR ------------------------------- -->
 
             <!-- ------------------------------ DEBUT MAIN ------------------------------- -->
-            <div class="container-fluid text-center py-2 my-2 mb-3" style="background-color:white; border:solid 1px darkgrey">
-
-                <img src="../Medias/logoRHON'EAU.jpg" alt="logo rhon'eau">
+            <div class="container-fluid text-center py-2 my-2 mb-3" style="background-color:white;">
+                <img class="img-fluid" src="../Medias/logoRHON'EAU.jpg" alt="logo rhon'eau">
             </div>
+
             <div style="background-color:RGBA(0,150,151,0.36); border:solid 1px darkgrey" class="container d-flex flex-column align-items-center text-center justify-content-center mb-3">
-                <h1 class="my-3 mx-3"><b></b>Espace Administrateur</b></h1><br>
+                <h1 class="mt-3 mx-3"><b></b>Espace Administrateur</b></h1><br>
                 <br>
                 <form method="post">
-                    <button class="btn btn-danger my-3 mx-3" type="submit" name="logout">Se déconnecter</button>
+                    <button class="btn btn-danger mb-3 mx-3" type="submit" name="logout">Se déconnecter</button>
                 </form>
             </div>
 
