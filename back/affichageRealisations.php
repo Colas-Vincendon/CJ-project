@@ -33,7 +33,7 @@
             echo "<div class='row " . ($isLeft ? 'align-left' : 'align-right') . "'>";
             echo "<div class='container-fluid col col-12 col-sm-4 text-center my-auto py-3 justify-content-around align-items-center " . ($isLeft ? 'order-sm-first' : 'order-sm-last') . "'>";
             
-            echo "<h3>$titre</h3>";
+            echo "<h3 class='mx-5'>$titre</h3>";
             echo "</div>";
             echo "<div class='container-fluid col col-12 col-sm-8 text-center my-auto py-3 justify-content-around align-items-center " . ($isLeft ? 'order-sm-last' : 'order-sm-first') . "'>";
 
