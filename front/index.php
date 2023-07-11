@@ -18,13 +18,12 @@
     echo "</div>";
     ?>
 
-
+<!-- ------------------------------- REVIEWS ----------------------------------- -->
     <div class="row text-center">
         <h2 class="pt-5 pb-3">Les avis clients</h2>
     </div>
     <div class="row pb-5 border-bottom">
         <div class="col-12 col-lg-2"></div>
-
         <div class="col-12 col-lg-4 text-center">
             <h3 class="py-5">Nous sommes notés</h3>
             <h1  class="py-2">5/5 sur 4 avis !</h1>
@@ -36,10 +35,7 @@
                 <i class="fas fa-star" style="color: #DAA520;margin-left: 0.1rem;"></i>
             </div>
         </div>
-
         <div class="col-12 col-lg-4 d-flex justify-content-center">
-
-
             <div id="carouselExample" class="carousel slide py-5 row row-cols-1 row-cols-md-2" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -58,7 +54,6 @@
             </div>
         </div>
         <div class="col-12 col-lg-2"></div>
-
     </div>
 
     <?php
