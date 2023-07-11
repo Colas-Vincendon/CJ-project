@@ -18,9 +18,11 @@ echo "<div class='container_fluid d-flex flex-column'>";
     echo "<div style='display:block'>";
     require './components/header.html';
     echo "</div>";
-
     echo "<div style='display:block'>";
     require './components/navServices.html';
+    echo "</div>";
+    echo "<div style='display:block'>";
+    require './components/galleryServices.html';
     echo "</div>";
     echo "<div style='display:block'>";
     require './components/footer.html';
@@ -35,15 +37,3 @@ echo "</div>";
 </body>
 <!-- ********************************************************************************************************* -->
 
-<?php
-
-require './components/header.html';
-
-?>
-<?php
-
-require './components/footer.html';
-
-?>
-
-  <script src="../front/script/header.js"></script>

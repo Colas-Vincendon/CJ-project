@@ -23,14 +23,14 @@ body {
 .gravityButton {
   display: grid;
   place-items: center;
-  width: 280px;
+  width: 225px;
   aspect-ratio: 1;
   border-radius: 50%;
   /*   border: 1px dashed #fff2;
  */
   & > button {
     font: inherit;
-    width: 160px;
+    width: 100px;
     aspect-ratio: 1;
     background: none;
     border-radius: 50%;
@@ -54,10 +54,10 @@ body {
 }
 .gravityButton p {
   color: white;
+  margin: 0%;
 }
-
 .buttonIcon {
-  width: 50%;
+  width: 30%;
   fill: var(--_fill, #fff);
   transition: fill 0.3s;
 }
