@@ -24,9 +24,9 @@
                 <div class="col-md-6" style="opacity: 0;">
                 </div>
                 <div class="col-md-6">
-                    <div class="py-4 px-5" style="background-color: #119da4; color: #ffffff; box-shadow: -13px 17px 37px -7px rgba(0,0,0,0.48);
--webkit-box-shadow: -13px 17px 37px -7px rgba(0,0,0,0.48);
--moz-box-shadow: -13px 17px 37px -7px rgba(0,0,0,0.48);">
+                    <div class="py-4 px-5" style="background-color: #119da4; color: #ffffff; box-shadow: -14px 20px 33px -8px rgba(0,0,0,0.51);
+-webkit-box-shadow: -14px 20px 33px -8px rgba(0,0,0,0.51);
+-moz-box-shadow: -14px 20px 33px -8px rgba(0,0,0,0.51);">
                         <p class="fs-5">Nous comprenons que chaque projet de plomberie et de chauffage est unique, c'est
                             pourquoi nous nous
                             engageons à fournir des devis sur mesure pour répondre précisément à vos besoins. Nous
@@ -54,9 +54,9 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <div class="py-4 px-5" style="background-color: #119da4; color: #ffffff; box-shadow: 12px 10px 37px -7px rgba(0,0,0,0.48);
--webkit-box-shadow: 12px 10px 37px -7px rgba(0,0,0,0.48);
--moz-box-shadow: 12px 10px 37px -7px rgba(0,0,0,0.48);">
+                    <div class="py-4 px-5" style="background-color: #119da4; color: #ffffff; box-shadow: 1px 0px 33px 12px rgba(0,0,0,0.51);
+-webkit-box-shadow: 1px 0px 33px 12px rgba(0,0,0,0.51);
+-moz-box-shadow: 1px 0px 33px 12px rgba(0,0,0,0.51);">
                         <p class="fs-5">Une fois que nous aurons collecté toutes les informations nécessaires et évalué
                             les
                             aspects techniques,
@@ -89,9 +89,9 @@
                 <div class="col-md-6" style="opacity: 0;">
                 </div>
                 <div class="col-md-6">
-                    <div class="py-4 px-5" style="background-color: #119da4; color: #ffffff; box-shadow: -13px -11px 37px -7px rgba(0,0,0,0.48);
--webkit-box-shadow: -13px -11px 37px -7px rgba(0,0,0,0.48);
--moz-box-shadow: -13px -11px 37px -7px rgba(0,0,0,0.48);">
+                    <div class="py-4 px-5" style="background-color: #119da4; color: #ffffff; box-shadow: -19px -18px 33px -8px rgba(0,0,0,0.51);
+-webkit-box-shadow: -19px -18px 33px -8px rgba(0,0,0,0.51);
+-moz-box-shadow: -19px -18px 33px -8px rgba(0,0,0,0.51);">
                         <p class="fs-5">Notre objectif est de vous offrir un service de plomberie et de chauffage de
                             qualité
                             supérieure, en
