@@ -1,4 +1,3 @@
-
 <div id="affichageRealisations">
 
     <?php
@@ -17,7 +16,7 @@
 
     if (!empty($chantiers)) {
         $isLeft = true; // Indicateur pour l'alignement à gauche ou à droite
-
+    
         foreach ($chantiers as $index => $chantier) {
             $chantierId = $chantier['id'];
             $titre = $chantier['titre'];
@@ -28,11 +27,11 @@
             $stmtImages->bindParam(':chantierId', $chantierId);
             $stmtImages->execute();
             $images = $stmtImages->fetchAll(PDO::FETCH_ASSOC);
-            
+
             echo "<div class='container-fluid'>";
             echo "<div class='row " . ($isLeft ? 'align-left' : 'align-right') . "'>";
             echo "<div class='container-fluid col col-12 col-sm-4 text-center my-auto py-3 justify-content-around align-items-center " . ($isLeft ? 'order-sm-first' : 'order-sm-last') . "'>";
-            
+
             echo "<h3 class='mx-5'>$titre</h3>";
             echo "</div>";
             echo "<div class='container-fluid col col-12 col-sm-8 text-center my-auto py-3 justify-content-around align-items-center " . ($isLeft ? 'order-sm-last' : 'order-sm-first') . "'>";
@@ -60,11 +59,18 @@
                 echo "</div>";
 
                 echo "<a class='carousel-control-prev' href='#carouselExampleIndicators_$chantierId' role='button' data-bs-slide='prev' style='opacity:0.8'>";
-                echo "<span class='carousel-control-prev-icon' aria-hidden='true' style='background-color:#119da4'></span>";
+                echo "<div class='d-flex rounded-circle justify-content-center align-items-center' style='height:50px; width:50px; ; background-color: #119da4;'>";
+                echo "<span class='carousel-control-prev-icon' aria-hidden='true'></span>";
+                echo "</div>";
+
                 echo "<span class='visually-hidden'>Previous</span>";
                 echo "</a>";
                 echo "<a class='carousel-control-next' href='#carouselExampleIndicators_$chantierId' role='button' data-bs-slide='next'  style='opacity:0.8'>";
-                echo "<span class='carousel-control-next-icon' aria-hidden='true' style='background-color:#119da4'></span>";
+
+                echo "<div class='d-flex rounded-circle justify-content-center align-items-center' style='height:50px; width:50px; background-color: #119da4;'>";
+                echo "<span class='carousel-control-next-icon' aria-hidden='true'></span>";
+                echo "</div>";
+
                 echo "<span class='visually-hidden'>Next</span>";
                 echo "</a>";
 

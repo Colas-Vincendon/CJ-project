@@ -10,9 +10,9 @@
   require_once '../front/components/header.html';
   ?>
 
-  <div class="border d-flex flex-column text-center py-5"  style="background-color: RGBA(255,255,0,0.06);">
+  <div class="border d-flex flex-column text-center py-5"  style="background-color: #f1f1f1">
     <h1 style="color:#119da4">Nos réalisations</h1>
-    <h4 class="mt-3">Découvrez quelques unes de nos réalisations</h4>
+    <p class="fs-5 px-5 mt-4">N'hésitez pas à parcourir nos réalisations et à vous inspirer pour votre projet. Si vous avez des questions ou souhaitez discuter de votre projet spécifique, notre équipe est là pour vous aider. Contactez-nous dès aujourd'hui pour obtenir des conseils d'experts et un service professionnel de plomberie et chauffage.</p>
     <div id="loading" class="loading mt-5">
       <div class="loading-animation"></div>
     </div>
@@ -20,7 +20,7 @@
 
   <div id="réalisations"></div>
 
-  <div class="border d-flex flex-column text-center py-5" style="background-color: RGBA(255,255,0,0.06);">
+  <div class="border d-flex flex-column text-center py-5" style="background-color: RGBA(0,0,0,0.09);">
     <h1 class="my-2 px-5" style="color:#119da4">Transformez votre projet en réalité avec notre expertise en plomberie et chauffage !</h1>
     <p class="fs-5 px-5 mt-4">Chaque réalisation que nous présentons est le fruit d'un travail minutieux, avec une attention particulière portée aux détails et à la satisfaction de nos clients. Nous collaborons étroitement avec nos clients pour comprendre leurs besoins et offrir des solutions personnalisées qui répondent à leurs attentes.</p><br>
     <p class="fs-5 px-5 mt-1">Faites confiance à RHÔN'EAU pour vos besoins en plomberie et chauffage. Nous sommes impatients de travailler avec vous et de réaliser votre projet avec excellence !</p>

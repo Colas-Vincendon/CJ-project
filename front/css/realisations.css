@@ -7,6 +7,9 @@
   background-color: #f1f1f1;
   color: #119da4;
 }
+.carousel-indicators li {
+  display: none;
+}
 
 /*----- ANIMATION TEMPS DE CHARGEMENT ---------*/
 .loading {

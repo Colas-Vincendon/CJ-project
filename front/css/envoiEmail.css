@@ -1,0 +1,7 @@
+.border-top {
+  margin-bottom: 80px;
+}
+.border-bottom {
+  margin-top: 79px;
+}
+/* faire les media queries une fois queries sur les classes border (voir envoiEmail.css) une fois que header.html et footer.html seront responsive! */

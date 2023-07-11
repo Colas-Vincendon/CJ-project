@@ -36,9 +36,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Envoyer l'e-mail
             if (mail($destinataire, $sujet, $contenu, $headers)) {
-                $succes = "Votre message a été envoyé avec succès.";
+                header('location: ../front/successEmail.php');
             } else {
-                $erreur = "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.";
+                header('location: ../front/failEmail.php');
             }
         }
     }
