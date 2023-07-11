@@ -24,8 +24,10 @@ footer {
 }
 .socialNetwork {
   display: flex;
-  margin-top: 0.8em;
   justify-content: space-around;
+}
+.logo img {
+  width: 16em;
 }
 .logoSocial {
   width: 6em;
