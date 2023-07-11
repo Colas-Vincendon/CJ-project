@@ -1,63 +1,105 @@
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #729bd7;
-  color: #fff;
-  min-height: 100vh;
-  place-items: center;
-  justify-content: center;
-}
 .galleryServices {
-  background-color: #119da4;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-shadow: inset 0px 20px 20px -13px #119da4;
+  padding: 1% 4%;
+  margin-bottom: 5%;
 }
-.gravityButton {
-  display: grid;
-  place-items: center;
-  width: 280px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  /*   border: 1px dashed #fff2;
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+}
+.titleServices {
+  /* MODIF POLICE ET TAILLE SI CONSERVER */
+  padding: 5%;
+  background-color: #119da4;
+  color: wheat;
+  width: max-content;
+}
+.imageService {
+  padding: 10%;
+}
+#imageSBain {
+  background-image: url(../../Medias/ServicePicture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20% 0% 0% 20%;
+  box-shadow: -20px 15px 11px 8px #119da4;
+  /* A VOIR
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  tranform: skew(30deg);
  */
-  & > button {
-    font: inherit;
-    width: 160px;
-    aspect-ratio: 1;
-    background: none;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    transform: translate(var(--tx, 0), var(--ty, 0));
-    opacity: var(--opacity, 0.25);
-    cursor: pointer;
-    transition: all 0.2s ease-out;
-
-    &:hover,
-    &:focus-visible {
-      --_fill: var(--color, #fff);
-    }
-
-    &:focus-visible {
-      outline: 2px solid #fff;
-      outline-offset: 2px;
-      opacity: 1;
-    }
+}
+#imageChauffage {
+  background-image: url(../../Medias/ServicePicture.jpg);
+  background-size: cover;
+  border-radius: 0% 20% 20% 0%;
+  box-shadow: 20px 15px 11px 8px #119da4;
+}
+#imagePlomberie {
+  background-image: url(../../Medias/ServicePicture.jpg);
+  background-size: cover;
+  border-radius: 20% 0% 0% 20%;
+  box-shadow: -20px 15px 11px 8px #119da4;
+}
+#imageClim {
+  background-image: url(../../Medias/ServicePicture.jpg);
+  background-size: cover;
+  border-radius: 0% 20% 20% 0%;
+  box-shadow: 20px 15px 11px 8px #119da4;
+}
+.texte {
+  width: 40%;
+}
+/* ANIMATION SERVICES */
+#salleDeBain {
+  animation: 0.9s;
+  animation-fill-mode: both;
+  animation-name: slideLeft;
+}
+#chauffage {
+  animation: 0.9s;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+  animation-name: slideRight;
+}
+#plomberie {
+  animation: 0.9s;
+  animation-delay: 1.4s;
+  animation-fill-mode: both;
+  animation-name: slideLeft;
+}
+#climatisation {
+  animation: 0.9s;
+  animation-delay: 2.1s;
+  animation-fill-mode: both;
+  animation-name: slideRight;
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 100%;
   }
 }
-.gravityButton p {
-  color: white;
-}
-
-.buttonIcon {
-  width: 50%;
-  fill: var(--_fill, #fff);
-  transition: fill 0.3s;
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
 }
