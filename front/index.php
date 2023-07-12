@@ -19,7 +19,11 @@
     echo "<div style='display:block'>";
     require './components/galleryServices.html';
     echo "</div>";
-
+    
+    echo "<div style='display:block'>";
+    require './components/brands.html';
+    echo "</div>";
+    
     echo "<div style='display:block'>";
     require './components/skills.html';
     echo "</div>";
@@ -31,7 +35,7 @@
     echo "<div style='display:block'>";
     require './components/footer.html';
     echo "</div>";
-    
+
     echo "</div>";
     echo "</div>";
     ?>
