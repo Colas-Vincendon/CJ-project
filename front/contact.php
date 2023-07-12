@@ -47,7 +47,7 @@
             <span class="small">En soumettant ce formulaire, j'accepte que les
               informations saisies soient exploitées dans le cadre
               de la relation commerciale qui peut en découler.
-              </span>
+              <a style="color: #fff;" href="politic.php" target="_blank">En savoir plus</a></span>
           </div>
 
           <div>
