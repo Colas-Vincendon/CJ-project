@@ -31,6 +31,7 @@
     echo "<div style='display:block'>";
     require './components/footer.html';
     echo "</div>";
+    
     echo "</div>";
     echo "</div>";
     ?>
