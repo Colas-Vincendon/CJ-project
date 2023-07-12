@@ -25,13 +25,14 @@ footer {
 .socialNetwork {
   display: flex;
   justify-content: space-around;
+  transform: translateX(10px);
 }
 .logo img {
-  width: 16em;
+  width: 14em;
 }
 .logoSocial {
-  width: 6em;
-  height: 4em;
+  width: 4em;
+  height: 3em;
 }
 .insta {
   background-image: url(../../Medias/socialNetwork/insta.png);
@@ -51,12 +52,22 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 }
+.footerContact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.colBorder {
+  border-left: 1px solid #119da4;
+  border-right: 1px solid #119da4;
+}
+.footerServices {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .footerTitle {
   color: #119da4;
-  margin-left: 2em;
 }
 .footerList {
-  margin-left: 4em;
   padding: 0;
   list-style-type: none;
   color: 119da4;
@@ -65,12 +76,9 @@ footer {
   text-decoration: none;
   color: #119da4;
 }
-.footerContact {
-  border-right: 2px solid #119da4;
-  border-left: 2px solid #119da4;
-}
 .footerPages {
-  border-left: 2px solid #119da4;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .copyright {
   display: flex;
@@ -78,4 +86,13 @@ footer {
   background-color: #119da4;
   padding: 1em 0;
   width: 100%;
+}
+
+/* -------------- media queries ---------------- */
+
+@media screen and (max-width: 991px) {
+  .colBorder {
+    border-left: none;
+    border-right: none;
+  }
 }
