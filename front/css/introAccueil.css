@@ -1,0 +1,24 @@
+#introAccueil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
+  background-color: #119da4;
+  padding: 2em 0;
+  border-radius: 28px 28px 0 0;
+  /* box-shadow: 0px 20px 20px 0px #119da4; A VOIR PREF */
+}
+#imageIntro {
+  padding: 13%;
+  background-image: url(../../Medias/image_illustration.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#texteIntro {
+  width: 55%;
+  color: white;
+  font-weight: 600;
+  font-size: larger;
+}
