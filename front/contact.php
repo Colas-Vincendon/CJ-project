@@ -38,12 +38,21 @@
 
           <div>
             <label class="my-1" for="message">Message *</label>
-            <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control mb-3"
-              name="message" id="message" required="required" aria-required="true"></textarea>
+            <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10"
+              class="form-control mb-3" name="message" id="message" required="required" aria-required="true"></textarea>
           </div>
 
           <div>
-            <button class="btn btn-outline-primary my-4" style='background-color: #fff; color:#119da4' type="submit">Envoyer</button>
+            <input value="1" name="rgpd" type="checkbox" required="required" />
+            <span class="small">En soumettant ce formulaire, j'accepte que les
+              informations saisies soient exploitées dans le cadre
+              de la relation commerciale qui peut en découler.
+              <a style="color: #fff;" href="politic.php" target="_blank">En savoir plus</a></span>
+          </div>
+
+          <div>
+            <button class="btn btn-outline-primary my-4" style='background-color: #fff; color:#119da4'
+              type="submit">Envoyer</button>
           </div>
 
         </form>
@@ -58,7 +67,7 @@
   require_once '../front/components/footer.html';
   ?>
 
-<script src="../front/script/header.js"></script>
+  <script src="../front/script/header.js"></script>
   <script src="https://kit.fontawesome.com/9468c33ba3.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
