@@ -17,6 +17,10 @@
     echo "</div>";
 
     echo "<div style='display:block'>";
+    require './components/introAccueil.html';
+    echo "</div>";
+
+    echo "<div style='display:block'>";
     require './components/galleryServices.html';
     echo "</div>";
     

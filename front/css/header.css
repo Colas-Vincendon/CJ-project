@@ -1,4 +1,11 @@
+@font-face {
+  font-family: 'roboto';
+  src: url(../assets/Roboto/Roboto-Regular.ttf);
+}
 /* PARTIE TOP HEADER */
+* {
+  font-family: 'roboto', sans-serif;
+}
 .topHeader {
   display: flex;
   justify-content: space-between;
@@ -18,7 +25,7 @@
 }
 .topHeader i {
   color: white;
-  font-size: small;
+  font-size: larger;
 }
 .topHeader a {
   color: white;
@@ -26,7 +33,7 @@
 }
 .socialLink {
   background-color: #119da4;
-  width: 3em;
+  width: 3.8em;
   height: 2em;
 
   display: flex;
@@ -55,6 +62,7 @@
 .headerNavLink {
   text-decoration: none;
   color: #119da4;
+  font-size: larger;
 }
 .actives {
   /*   color: #0d6efd;*/

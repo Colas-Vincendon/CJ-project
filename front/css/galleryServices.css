@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  box-shadow: inset 10px 20px 20px -13px #119da4;
+  box-shadow: inset 3px 20px 20px -13px #119da4;
   padding: 1% 4%;
   margin-bottom: 5%;
 }
