@@ -4,7 +4,108 @@
       rgba(0, 130, 130, 0.7),
       rgba(0, 130, 130, 0.7)
     ),
-    url('../Medias/pics_popCard/city-Lyon.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
+    url('../../Medias/pics_popCard/city-Lyon.jpg');
+  background-repeat: repeat;
+  background-position: top;
+  object-fit: cover;
+}
+.col {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title {
+  color: #f1f1f1;
+}
+.logoSkills {
+  color: #119da4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.cardsSkills {
+  height: 430px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.paragraph {
+  color: RGBA(0, 0, 0, 0.5);
+}
+
+/* ------------- media queries -------------- */
+
+@media screen and (max-width: 1740px) {
+  .cardsSkills {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .cardsSkills {
+    height: 470px;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .cardsSkills {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .cardsSkills {
+    height: 530px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .cardsSkills {
+    height: 570px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cardsSkills {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cardsSkills {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .cardsSkills {
+    height: 460px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardsSkills {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .cardsSkills {
+    height: 380px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .cardsSkills {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cardsSkills {
+    height: 480px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .cardsSkills {
+    height: 510px;
+  }
+}
+@media screen and (max-width: 355px) {
+  .cardsSkills {
+    height: 540px;
+  }
 }
