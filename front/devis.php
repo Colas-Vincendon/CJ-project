@@ -111,7 +111,12 @@
                     </div>
                 </div>
             </div>
-
+            <div class="row py-5" text-center>
+                <h1 class="pb-4" style="color:#119da4">Réalisons votre projet ensemble !</h1>
+                <a href="contact.php">
+                    <button class="btn btn-primary">Contactez-nous</button>
+                </a>
+            </div>
         </div>
 
     </div>
