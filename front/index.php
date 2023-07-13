@@ -48,14 +48,5 @@
     <script src="https://kit.fontawesome.com/9468c33ba3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../front/script/header.js"></script>
-    <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
-    
-    btn.addEventListener("click", function () {
-      menu.classList.toggle("hidden");
-    });
-    
-      </script>
 
 </body>
