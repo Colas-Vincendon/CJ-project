@@ -1,13 +1,14 @@
-body {
-  min-height: 100vh;
+.sliderZone {
+  min-height: 10vh;
   display: grid;
   place-items: center;
+  margin-bottom: 2em;
 }
 .slider {
-  height: 250px;
+  height: 150px;
   margin: auto;
   position: absolute;
-  width: 90%;
+  width: 100%;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -15,7 +16,7 @@ body {
 .slideTrack {
   display: flex;
   width: calc(250px * 8);
-  animation: scroll 40s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 .slideTrack:hover {
   animation-play-state: paused;
@@ -25,11 +26,11 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 9));
+    transform: translateX(calc(-250px * 8));
   }
 }
 .slide {
-  height: 200px;
+  height: 130px;
   width: 250px;
   display: flex;
   align-items: center;
