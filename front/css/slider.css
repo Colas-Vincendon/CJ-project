@@ -15,7 +15,7 @@
 }
 .slideTrack {
   display: flex;
-  width: calc(250px * 8);
+  width: 3000px;
   animation: scroll 50s linear infinite;
 }
 .slideTrack:hover {
@@ -29,7 +29,7 @@
     transform: translateX(calc(-250px * 8));
   }
 }
-.slide {
+.slide2 {
   height: 130px;
   width: 250px;
   display: flex;
