@@ -77,6 +77,9 @@
 }
 /* PARTIE RESPONSIVE */
 @media (max-width: 768px) {
+  #imgHeader {
+    width: 25em;
+  }
   .navigationHeader {
     justify-content: flex-end;
   }

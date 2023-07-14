@@ -22,3 +22,9 @@
   font-weight: 600;
   font-size: larger;
 }
+
+@media (max-width: 768px) {
+  #texteIntro {
+    font-size: small;
+  }
+}
