@@ -2,3 +2,6 @@
   color: #daa520;
   margin-left: 0.1rem;
 }
+.slide {
+  max-width: 350px;
+}
