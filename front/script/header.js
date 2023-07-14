@@ -10,3 +10,13 @@ navLink.forEach((navLink) => {
     navLink.classList.add('actives'); // mises en place de la class actives
   }
 });
+
+// menu burger
+const menuHamburger = document.querySelector('#openMenu');
+const nav = document.querySelector('.nav');
+console.log(nav);
+console.log(menuHamburger);
+menuHamburger.addEventListener('click', () => {
+  nav.classList.toggle('showMenu');
+  console.log('lolo');
+});
