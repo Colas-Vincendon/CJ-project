@@ -37,7 +37,4 @@ echo "</div>";
 <script src="../front/script/readMore.js"></script>
 <script src="../front/script/clickOutside.js"></script>
 
-
 </body>
-<!-- ********************************************************************************************************* -->
-
