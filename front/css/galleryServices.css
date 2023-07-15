@@ -38,7 +38,10 @@
 }
 .imageService {
   background-position: center;
-width: 335px;}
+  width: 40%;
+  max-height: 520px;
+}
+
 #imageSBain {
   background-image: url(../../Medias/pics_popCard/italianShower4.jpeg);
   background-size: cover;
@@ -47,7 +50,7 @@ width: 335px;}
   box-shadow: -20px 15px 11px 8px #119da4;
 }
 #imageChauffage {
-  background-image: url(../../Medias/ServicePicture.jpg);
+  background-image: url(../../Medias/pics_popCard/radiator-ge8ecf57c0_1920.jpg);
   background-size: cover;
   border-radius: 0% 20% 20% 0%;
   box-shadow: 20px 15px 11px 8px #119da4;
@@ -62,10 +65,11 @@ width: 335px;}
   background-image: url(../../Medias/ServicePicture.jpg);
   background-size: cover;
   border-radius: 0% 20% 20% 0%;
-  box-shadow: 20px 15px 11px 8px #119da4;
+  box-shadow: 20px 15px 11px 8px #8b9292;
 }
 .texte {
   width: 40%;
+  font-size: 1.5em;
 }
 /* ANIMATION SERVICES */
 #salleDeBain {
