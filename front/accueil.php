@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="../front/css/header.css" rel="stylesheet" />
-<link href="../front/css/galleryServices.css" rel="stylesheet" />
+<link href="../front/css/galleryAccueil.css" rel="stylesheet" />
 <link href="../front/css/skills.css" rel="stylesheet" />
 <link href="../front/css/reviews.css" rel="stylesheet" />
 <link href="../front/css/footer.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
     echo "</div>";
 
     echo "<div style='display:block'>";
-    require './components/galleryServices.html';
+    require './components/galleryAccueil.html';
     echo "</div>";
     
     echo "<div style='display:block'>";
