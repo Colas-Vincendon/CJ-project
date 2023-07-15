@@ -34,11 +34,15 @@
 
             echo "<h3 class='mx-5'>$titre</h3>";
             echo "</div>";
-            echo "<div class='container-fluid col col-12 col-sm-8 text-center my-auto py-3 justify-content-around align-items-center " . ($isLeft ? 'order-sm-last' : 'order-sm-first') . "'>";
+            echo "<div class='container-fluid col col-12 col-sm-8 text-center my-auto py-3 d-flex justify-content-center text-center align-items-center " . ($isLeft ? 'order-sm-last' : 'order-sm-first') . "'>";
 
             if (count($images) === 1) {
                 // Afficher une seule image
-                echo "<img style='height:auto; width: 400px; object-fit:cover;' src='data:image/jpeg;base64," . $images[0]['image_base64'] . "' class='d-block mx-auto' alt='Image chantier'>";
+                echo "<div class='mx-auto' style='height:auto; max-width: 500px; object-fit:cover;'>";
+
+                echo "<img src='data:image/jpeg;base64," . $images[0]['image_base64'] . "' class='d-block img-fluid mx-auto' alt='Image chantier'>";
+                echo "</div>";
+
             } else if (count($images) > 1) {
                 // Afficher un carousel
                 echo "<div id='carouselExampleIndicators_$chantierId' class='carousel slide' data-bs-ride='carousel'>";
@@ -49,17 +53,17 @@
                 }
                 echo "</ol>";
 
-                echo "<div class='carousel-inner mx-auto' style='width: 400px; height: 500px; ; object-fit:cove'>";
+                echo "<div class='carousel-inner mx-auto' style='max-width: 500px; max-height: 500px; ; object-fit:cover'>";
                 foreach ($images as $index => $image) {
                     $active = ($index === 0) ? "active" : "";
                     echo "<div class='carousel-item $active'>";
-                    echo "<img style='height:100%; min-height: 500px; width: 100%; object-fit:cover;' src='data:image/jpeg;base64," . $image['image_base64'] . "' class='d-block img-fluid' alt='Image chantier'>";
+                    echo "<img style='height:100%; max-height: 500px; max-width: 100%; object-fit:cover;' src='data:image/jpeg;base64," . $image['image_base64'] . "' class='d-block img-fluid' alt='Image chantier'>";
                     echo "</div>";
                 }
                 echo "</div>";
 
                 echo "<a class='carousel-control-prev' href='#carouselExampleIndicators_$chantierId' role='button' data-bs-slide='prev' style='opacity:0.8'>";
-                echo "<div class='d-flex rounded-circle justify-content-center align-items-center' style='height:50px; width:50px; ; background-color: #119da4;'>";
+                echo "<div class='d-flex rounded-circle justify-content-center align-items-center' style='height:50px; width:50px;'>";
                 echo "<span class='carousel-control-prev-icon' aria-hidden='true'></span>";
                 echo "</div>";
 
@@ -67,7 +71,7 @@
                 echo "</a>";
                 echo "<a class='carousel-control-next' href='#carouselExampleIndicators_$chantierId' role='button' data-bs-slide='next'  style='opacity:0.8'>";
 
-                echo "<div class='d-flex rounded-circle justify-content-center align-items-center' style='height:50px; width:50px; background-color: #119da4;'>";
+                echo "<div class='d-flex rounded-circle justify-content-center align-items-center' style='height:50px; width:50px;'>";
                 echo "<span class='carousel-control-next-icon' aria-hidden='true'></span>";
                 echo "</div>";
 
