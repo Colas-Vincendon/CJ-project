@@ -89,6 +89,9 @@ if (isset($_POST['logout'])) {
                 <form method="post">
                     <button class="btn btn-danger mb-3 mx-3" type="submit" name="logout">Se déconnecter</button>
                 </form>
+                <div class="my-4">
+                    <a target="_blank" href="../front/nosRealisations.php"><button class="btn btn-primary">Visiter le site</button></a>
+                </div>
             </div>
 
             <div style="background-color:RGBA(0,150,151,0.36); border:solid 1px darkgrey" class="container text-center my-5">
