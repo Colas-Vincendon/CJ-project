@@ -33,6 +33,7 @@ echo "</div>";
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../front/script/header.js"></script>  
 <script src="../front/script/cardsServices.js"></script>
+<script src="../front/script/readMore.js"></script>
 
 </body>
 <!-- ********************************************************************************************************* -->
