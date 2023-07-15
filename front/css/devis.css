@@ -20,6 +20,20 @@
 .devisPic {
   display: none;
 }
+.btn-bleu {
+  background-color: #119da4;
+  color: white;
+  width: 150px;
+  border-radius: 5px;
+  border: #119da4;
+  height: 50px;
+}
+.btn-bleu:hover {
+  background-color: #ffffff;
+  color: #119da4;
+  border: 1px solid #119da4;
+  transition: ease-in-out 250ms;
+}
 
 @media screen and (max-width: 767px) {
   .block {
