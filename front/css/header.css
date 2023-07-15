@@ -6,9 +6,6 @@
 * {
   font-family: "roboto", sans-serif;
 }
-body {
-  width: 100vw;
-}
 .topHeader {
   display: flex;
   padding: 0 1em;

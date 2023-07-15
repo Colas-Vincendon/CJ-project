@@ -4,7 +4,7 @@
       rgba(0, 130, 130, 0.7),
       rgba(0, 130, 130, 0.7)
     ),
-    url('../../Medias/pics_popCard/city-Lyon.jpg');
+    url("../../Medias/pics_popCard/city-Lyon.jpg");
   background-repeat: repeat;
   background-position: top;
   object-fit: cover;
@@ -12,8 +12,6 @@
 .col {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .title {
   color: #f1f1f1;
