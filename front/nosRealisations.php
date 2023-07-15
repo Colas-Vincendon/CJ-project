@@ -40,4 +40,6 @@
     crossorigin="anonymous"></script>
   <script src="../front/script/header.js"></script>
   <script src="../front/script/loadingAnimation.js"></script>
+  <script src="../front/script/clickOutside.js"></script>
+
 </body>
