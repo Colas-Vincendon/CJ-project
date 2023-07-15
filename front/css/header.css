@@ -1,10 +1,13 @@
 @font-face {
-  font-family: 'roboto';
+  font-family: "roboto";
   src: url(../assets/Roboto/Roboto-Regular.ttf);
 }
 /* PARTIE TOP HEADER */
 * {
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
+}
+body {
+  width: 100vw;
 }
 .topHeader {
   display: flex;
