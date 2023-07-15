@@ -13,31 +13,31 @@
     echo "<div class='container_fluid'>";
 
     echo "<div style='display:block'>";
-    require './components/header.html';
+    require './front/components/header.html';
     echo "</div>";
 
     echo "<div style='display:block'>";
-    require './components/introAccueil.html';
+    require './front/components/introAccueil.html';
     echo "</div>";
 
     echo "<div style='display:block'>";
-    require './components/galleryServices.html';
+    require './front/components/galleryServices.html';
     echo "</div>";
     
     echo "<div style='display:block'>";
-    require './components/slider.html';
+    require './front/components/slider.html';
     echo "</div>";
     
     echo "<div style='display:block'>";
-    require './components/skills.html';
+    require './front/components/skills.html';
     echo "</div>";
     
     echo "<div style='display:block'>";
-    require './components/reviews.html';
+    require './front/components/reviews.html';
     echo "</div>";
     
     echo "<div style='display:block'>";
-    require './components/footer.html';
+    require './front/components/footer.html';
     echo "</div>";
     
     echo "</div>";
