@@ -7,13 +7,27 @@
   padding: 1% 4%;
   margin-bottom: 5%;
 }
+
+.readMoreBtn{
+  color: #119da4;
+  cursor: pointer;
+}
+
+.readMoreTxt{
+  display: none;
+}
+
+.readMoreTxt--show{
+  display: inline;
+}
 .services {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   margin-top: 2%;
+  margin-bottom: 2em;
 }
 .titleServices {
   /* MODIF POLICE ET TAILLE SI CONSERVER */
@@ -23,20 +37,14 @@
   width: max-content;
 }
 .imageService {
-  padding: 10%;
-}
+  background-position: center;
+width: 335px;}
 #imageSBain {
-  background-image: url(../../Medias/ServicePicture.jpg);
+  background-image: url(../../Medias/pics_popCard/italianShower4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20% 0% 0% 20%;
   box-shadow: -20px 15px 11px 8px #119da4;
-  /* A VOIR
-  -webkit-transform: skew(30deg);
-  -moz-transform: skew(30deg);
-  -o-transform: skew(30deg);
-  tranform: skew(30deg);
- */
 }
 #imageChauffage {
   background-image: url(../../Medias/ServicePicture.jpg);
@@ -45,7 +53,7 @@
   box-shadow: 20px 15px 11px 8px #119da4;
 }
 #imagePlomberie {
-  background-image: url(../../Medias/ServicePicture.jpg);
+  background-image: url(../../Medias/pics_popCard/pipes.jpg);
   background-size: cover;
   border-radius: 20% 0% 0% 20%;
   box-shadow: -20px 15px 11px 8px #119da4;

@@ -33,8 +33,12 @@ echo "</div>";
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../front/script/header.js"></script>  
 <script src="../front/script/cardsServices.js"></script>
+<<<<<<< HEAD
+<script src="../front/script/readMore.js"></script>
+=======
 <script src="../front/script/clickOutside.js"></script>
 
+>>>>>>> a2f52cbbab3abd5b5cf18b1b7b11fe9a4947786b
 
 </body>
 <!-- ********************************************************************************************************* -->
