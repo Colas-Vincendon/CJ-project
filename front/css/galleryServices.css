@@ -8,16 +8,16 @@
   margin-bottom: 5%;
 }
 
-.readMoreBtn{
+.readMoreBtn {
   color: #119da4;
   cursor: pointer;
 }
 
-.readMoreTxt{
+.readMoreTxt {
   display: none;
 }
 
-.readMoreTxt--show{
+.readMoreTxt--show {
   display: inline;
 }
 .services {
