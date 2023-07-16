@@ -28,3 +28,13 @@
     font-size: small;
   }
 }
+
+@media (max-width:550px) {
+  #introAccueil{
+    flex-direction: column;
+  }
+  #texteIntro{
+    width:95%;
+  }
+  }
+  

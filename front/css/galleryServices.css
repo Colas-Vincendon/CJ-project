@@ -39,7 +39,7 @@
 .imageService {
   background-position: center;
   width: 40%;
-  max-height: 520px;
+  /* max-height: 520px; */
 }
 
 #imageSBain {
@@ -70,6 +70,33 @@
 .texte {
   width: 40%;
   font-size: 1.5em;
+}
+@media (max-width:550px) {
+  #salleDeBain{
+    margin-top: 1em;
+  }
+  #salleDeBain, #plomberie{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #chauffage{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #imageSBain, #imageChauffage, #imagePlomberie{
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+  .texte{
+    margin-top: 1em;
+    width: 100%;
+  }
+  .texte h3{
+    font-weight: 800;
+  }
 }
 /* ANIMATION SERVICES */
 #salleDeBain {
