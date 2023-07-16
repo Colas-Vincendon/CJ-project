@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'roboto';
+  font-family: "roboto";
   src: url(../assets/Roboto/Roboto-Regular.ttf);
 }
 /* PARTIE TOP HEADER */
 * {
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
 }
 .topHeader {
   display: flex;
@@ -151,13 +151,13 @@
   }
   .info {
     justify-content: center;
-    height: 2.6em;
+    height: 1.5em;
   }
   .socialLink {
     display: flex;
     justify-content: center;
     width: auto;
-    height: 2.6em;
+    height: 1.5em;
   }
   .socialLink a {
     margin: 0 10px;
