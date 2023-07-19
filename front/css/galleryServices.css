@@ -99,7 +99,7 @@
   }
 }
 /* ANIMATION SERVICES */
-#salleDeBain {
+/* #salleDeBain {
   animation: 0.9s;
   animation-fill-mode: both;
   animation-name: slideLeft;
@@ -115,12 +115,6 @@
   animation-delay: 1.4s;
   animation-fill-mode: both;
   animation-name: slideLeft;
-}
-#climatisation {
-  animation: 0.9s;
-  animation-delay: 2.1s;
-  animation-fill-mode: both;
-  animation-name: slideRight;
 }
 @keyframes slideLeft {
   from {
@@ -142,3 +136,4 @@
     opacity: 100%;
   }
 }
+ */
