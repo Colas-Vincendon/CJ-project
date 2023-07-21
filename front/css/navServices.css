@@ -59,4 +59,3 @@ body {
   fill: var(--_fill, #fff);
   transition: fill 0.3s;
 }
-
