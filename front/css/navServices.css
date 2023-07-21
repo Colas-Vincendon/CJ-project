@@ -28,7 +28,7 @@ body {
   border-radius: 50%;
   & > button {
     font: inherit;
-    width: 100px;
+    width: 110px;
     aspect-ratio: 1;
     background: none;
     border-radius: 50%;
@@ -58,4 +58,11 @@ body {
   width: 30%;
   fill: var(--_fill, #fff);
   transition: fill 0.3s;
+}
+
+@media (max-width: 768px) {
+  .gravityButton button {
+    opacity: var(--opacity, 1);
+    transform: none;
+  }
 }
