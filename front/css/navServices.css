@@ -61,7 +61,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .gravityButton button{
+  .gravityButton button {
     opacity: var(--opacity, 1);
     transform: none;
   }
