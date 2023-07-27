@@ -11,7 +11,7 @@
 <body>
 
     <?php
-    echo "<div class='container_fluid d-flex flex-column'>";
+    echo "<div class='container_fluid d-flex flex-column' style='overflow:hidden'>";
     echo "<div class='container_fluid'>";
 
     echo "<div style='display:block'>";
