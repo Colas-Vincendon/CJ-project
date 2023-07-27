@@ -9,6 +9,14 @@
     <link href="../front/css/footer.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <meta property="og:title" content="Politique du site Rhôn'eau">
+
+    <meta property="og:url" content="/">
+<meta property="og:image" content="../Medias/logo2.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rhôn'eau">
+<meta property="og:locale" content="fr_FR">
+
 </head>
 
 <body>

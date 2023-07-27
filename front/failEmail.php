@@ -10,6 +10,14 @@
     <link href="../front/css/header.css" rel="stylesheet" />
     <link href="../front/css/footer.css" rel="stylesheet" />
     <link href="../front/css/envoiEmail.css" rel="stylesheet" />
+    <meta property="og:title" content="Erreur mail">
+
+    <meta property="og:url" content="/">
+<meta property="og:image" content="../Medias/logo2.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rhôn'eau">
+<meta property="og:locale" content="fr_FR">
+
 </head>
 
 <body>
