@@ -35,8 +35,8 @@ N'hésitez pas à nous contacter pour plus d'informations ou pour prendre rendez
 <meta property="og:url" content="/">
 <meta property="og:image" content="../Medias/logo2.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="nom du site">
-<meta property="og:locale" content="fr-FR">
+<meta property="og:site_name" content="Rhôn'eau">
+<meta property="og:locale" content="fr_FR">
 
 </head>
 
