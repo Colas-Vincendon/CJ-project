@@ -10,6 +10,8 @@
     <link href="../front/css/header.css" rel="stylesheet" />
     <link href="../front/css/footer.css" rel="stylesheet" />
     <link href="../front/css/envoiEmail.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../Medias/logo3.png">
+
     <meta property="og:title" content="Erreur mail">
 
     <meta property="og:url" content="/">
