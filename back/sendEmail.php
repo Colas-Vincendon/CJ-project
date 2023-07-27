@@ -44,5 +44,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
-// Rajouter header pour success ou fail sendEmail

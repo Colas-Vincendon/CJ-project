@@ -7,19 +7,6 @@
   padding: 1% 4%;
   margin-bottom: 5%;
 }
-
-.readMoreBtn {
-  color: #119da4;
-  cursor: pointer;
-}
-
-.readMoreTxt {
-  display: none;
-}
-
-.readMoreTxt--show {
-  display: inline;
-}
 .services {
   display: flex;
   flex-direction: row;
@@ -30,41 +17,58 @@
   margin-bottom: 2em;
 }
 .titleServices {
-  /* MODIF POLICE ET TAILLE SI CONSERVER */
   padding: 5%;
-  background-color: #119da4;
+  background-color: #119da48a;
   color: wheat;
-  width: max-content;
+  text-align: center;
+}
+.servicesLink{
+  text-decoration: none;
 }
 .imageService {
   background-position: center;
-  width: 40%;
+  width: 100%;
   max-height: 520px;
+  min-height: 341px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 #imageSBain {
   background-image: url(../../Medias/pics_popCard/italianShower4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 20% 0% 0% 20%;
+  border-radius: 20px;
   box-shadow: -20px 15px 11px 8px #119da4;
+}
+#ImageSBain:hover .titleServices{
+  background-color: #119da4;
+  transform: scale(1.2);
+  border-radius: 5px;
 }
 #imageChauffage {
   background-image: url(../../Medias/pics_popCard/radiator-ge8ecf57c0_1920.jpg);
   background-size: cover;
-  border-radius: 0% 20% 20% 0%;
+  border-radius: 20px;
   box-shadow: 20px 15px 11px 8px #119da4;
 }
+#imageChauffage:hover .titleServices{
+  background-color: #119da4;
+  transform: scale(1.2);
+  border-radius: 5px;
+}  
 #imagePlomberie {
   background-image: url(../../Medias/pics_popCard/pipes.jpg);
   background-size: cover;
-  border-radius: 20% 0% 0% 20%;
+  border-radius: 20px;
   box-shadow: -20px 15px 11px 8px #119da4;
 }
-.texte {
-  width: 40%;
-  font-size: 1.5em;
+#imagePlomberie:hover .titleServices{
+  background-color: #119da4;
+  transform: scale(1.2);
+  border-radius: 5px;
 }
+  
 /* ANIMATION SERVICES */
 #salleDeBain {
   animation: 0.9s;
