@@ -15,6 +15,7 @@ Réparation de systèmes de chauffage central
 Entretien de systèmes de chauffage central
 Nous sommes une entreprise agréée et assurée, et nous offrons une garantie sur tous nos travaux. Nous nous engageons à fournir un service de qualité à nos clients, et nous sommes disponibles 24h/24 et 7j/7 pour répondre à vos besoins.
 N'hésitez pas à nous contacter pour plus d'informations ou pour prendre rendez-vous.">
+<link rel="shortcut icon" href="../Medias/logo2.png">
     <link href="../front/css/header.css" rel="stylesheet" />
     <link href="../front/css/galleryAccueil.css" rel="stylesheet" />
     <link href="../front/css/skills.css" rel="stylesheet" />
