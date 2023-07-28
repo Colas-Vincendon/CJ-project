@@ -50,24 +50,24 @@
   box-shadow: -20px 15px 11px 8px #119da4;
 }
 #imageChauffage {
-  background-image: url(../../Medias/pics_popCard/radiator-ge8ecf57c0_1920.jpg);
+  background-image: url(../../Medias/pics_popCard/radiator4.jpg);
   background-size: cover;
   border-radius: 0% 20% 20% 0%;
   box-shadow: 20px 15px 11px 8px #119da4;
 }
 #imagePlomberie {
-  background-image: url(../../Medias/pics_popCard/pipes.jpg);
+  background-image: url(../../Medias/pics_popCard/plomberie.jpg);
   background-size: cover;
   border-radius: 20% 0% 0% 20%;
   box-shadow: -20px 15px 11px 8px #119da4;
 }
-#imageClim {
+/* #imageClim {
   background-image: url(../../Medias/ServicePicture.jpg);
   background-size: cover;
   border-radius: 0% 20% 20% 0%;
   box-shadow: 20px 15px 11px 8px #8b9292;
 }
-.texte {
+ */.texte {
   width: 40%;
   font-size: 1.5em;
 }

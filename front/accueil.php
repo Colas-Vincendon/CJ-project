@@ -41,7 +41,7 @@ N'hésitez pas à nous contacter pour plus d'informations ou pour prendre rendez
 
 </head>
 
-<body>
+<body style="overflow-x:hidden">
     <?php
     require './components/header.html';
     require './components/introAccueil.html';
