@@ -34,7 +34,7 @@ Entretien de systèmes de chauffage central
 Nous sommes une entreprise agréée et assurée, et nous offrons une garantie sur tous nos travaux. Nous nous engageons à fournir un service de qualité à nos clients, et nous sommes disponibles 24h/24 et 7j/7 pour répondre à vos besoins.
 N'hésitez pas à nous contacter pour plus d'informations ou pour prendre rendez-vous.">
 <meta property="og:url" content="https://rhoneau.fr/front/accueil">
-<meta property="og:image" content="https://rhoneau-a8e844ea6e1d.herokuapp.com/Medias/logo5.jpg">
+<meta property="og:image" content="https://rhoneau-a8e844ea6e1d.herokuapp.com/Medias/pic_visitCards.jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rhôn'eau">
 <meta property="og:locale" content="fr_FR">
