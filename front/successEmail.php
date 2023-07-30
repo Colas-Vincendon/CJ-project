@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="../Medias/logo3.png">
 
     <meta property="og:url" content="https://rhoneau.fr/front/successEmail">
-<meta property="og:image" content="../Medias/logo2.png">
+    <meta property="og:image" content="https://rhoneau-a8e844ea6e1d.herokuapp.com/Medias/logo4.jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rhôn'eau">
 <meta property="og:locale" content="fr_FR">
