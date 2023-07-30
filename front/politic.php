@@ -13,7 +13,7 @@
 
     <meta property="og:title" content="Politique du site Rhôn'eau">
 
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="https://rhoneau.fr/front/politic">
 <meta property="og:image" content="../Medias/logo2.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rhôn'eau">

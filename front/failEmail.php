@@ -14,7 +14,7 @@
 
     <meta property="og:title" content="Erreur mail">
 
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="https://rhoneau.fr/front/failEmail">
 <meta property="og:image" content="../Medias/logo2.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rhôn'eau">

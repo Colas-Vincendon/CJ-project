@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="../Medias/logo3.png">
 
     <meta property="og:title" content="Devis Rhôn'eau">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="https://rhoneau.fr/front/devis">
 <meta property="og:image" content="../Medias/logo2.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rhôn'eau">
