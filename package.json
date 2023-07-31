@@ -1,0 +1,15 @@
+{
+  "name": "rhoneau",
+  "version": "1.0.0",
+  "description": "site Rhoneau",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Koundour and Colas Vincendon",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "composer": "^4.1.0"
+  }
+}
