@@ -1,0 +1,12 @@
+{
+    "name": "colas/rhoneau",
+    "description": "site Rhoneau",
+    "require": {
+        "php": "^8.2"
+    },
+    "authors": [
+        {
+            "name": "Jeremy Koundour and Colas Vincendon"
+        }
+    ]
+}
