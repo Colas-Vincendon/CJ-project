@@ -36,7 +36,7 @@ MySQL : La base de données choisie pour stocker, récupérer et gérer les donn
 
 ## 🔗 Liens utiles
 
-https://rhoneau-a8e844ea6e1d.herokuapp.com/
+https://www.rhoneau.fr/
 
 ## 📝 Collaborations
 
